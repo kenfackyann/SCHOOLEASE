@@ -1,0 +1,7 @@
+{
+  "name": "SCHOOLEASE-MobileEnd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
