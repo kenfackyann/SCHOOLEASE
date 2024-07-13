@@ -5,3 +5,4 @@ async function includeHTML(elementId,file) {
 }
 
 includeHTML('yann','/pages/yann_page.html');
+includeHTML('ange','/pages/ange_page.html');
