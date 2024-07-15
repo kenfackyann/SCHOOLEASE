@@ -1,0 +1,72 @@
+
+
+  
+  .articles-section {
+    width: 95%;
+    max-width: 600px;
+    margin: 20px;
+  }
+  
+  .articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #show-more {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .articles-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .article-card {
+    min-width: 200px;
+    min-height: 300px;
+    margin: 10px;
+    scroll-snap-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 0 0 60%;
+    transition: transform 1s ease;
+  }
+  
+  /* to remove if we decide to remove img*/
+  .article-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .article-card h3 {
+      font-weight: 600;
+      padding: 12px;
+    }
+    
+    .article-card p {
+      font-weight: 400;
+      padding: 0 12px 12px;
+    }
+  
+  .grid-view .article-card {
+    width: calc(50% - 20px);
+    flex: 1 0 auto;
+    transform: none !important;
+  }
+  
+  .grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  
