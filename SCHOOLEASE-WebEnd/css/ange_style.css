@@ -1,12 +1,20 @@
-#ange{
-  background-color: red;
+#ange.contact_expert{
+  position: relative;
+  width: 100%;
+  background-image: url(/black-man-laptop-and-call-center-employee-talking-training-and-in-customer-service-help-and-contact-us-support-crm-consulting-office-worker-receptionist-or-telemarketing-communication-consultant-2PRRFB9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 25px;
+  height: 250px;
 }
-#img{
+.contact_expert h2{
+  font-size: 25px;
+  padding: 10px;
+
+}
+.contact_paragraph p{
   display: flex;
-  justify-items: right;
-  align-content: end;
-  margin-right: auto;
-}
-.div{
-  width:10px;
-}
+  align-items: center;
+  justify-content: center;
+} 
