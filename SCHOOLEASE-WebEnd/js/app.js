@@ -5,9 +5,9 @@ async function includeHTML(elementId,file) {
 }
 
 includeHTML('yann','/pages/yann_page.html');
-
 includeHTML('ange','/pages/ange_page.html');
-
 includeHTML('lelica','/pages/lelica_page.html');
-
 includeHTML('goldsmith','/pages/smith_pages.html');
+includeHTML('jeanClaude','/pages/smith_pages.html');
+includeHTML('maisy','/pages/smith_pages.html');
+includeHTML('tessoh','/pages/smith_pages.html');
