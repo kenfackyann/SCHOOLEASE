@@ -1,29 +1,95 @@
 #yann{
-    background-color: brown;
+    margin: 0;
+    
 }
-#yann nav{
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: #def1fd;
+    padding: 40px 0;
+  }
+  .slide-container h2 {
+    font-size: 20px;
+  }
+  .slide-content {
+    margin: 0 40px;
+ 
+    overflow: hidden; 
+    border-radius: 25px;
+
+  }
+  .card-wrapper {
     display: flex;
     flex-direction: row;
+  }
+  .card {
+    border-radius: 25px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .image-content,
+  .card-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    justify-content: flex-start;
-
-}
-
-#yann .nav_links{
-
-   
-}
-#yann ul{
-   list-style: none;
-   list-style-type: none;
-   display: flex;
-   flex-direction: row;
-
-}
-#yann ul li {
-margin: 10px;
-float: inline-end;
-color: black;
- 
- }
+    padding: 10px 14px;
+  }
+  .image-content {
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+  }
+  .card-image {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+    border-radius: 20%;
+    padding: 3px;
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 0;
+  }
+  
+  .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 4px solid #4070f4;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 10px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button:hover {
+    background: #265df2;
+  }
+  @media screen and (max-width: 780px) {
+    .slide-content {
+      margin: 0 10px;
+    }
+  }
