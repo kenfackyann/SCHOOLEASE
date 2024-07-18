@@ -3,3 +3,5 @@ SCHOOLEASE-MobileEnd/node_modules
 SCHOOLEASE-MobileEnd/.gitignore
 SCHOOLEASE-MobileEnd/dist/
 SCHOOLEASE-MobileEnd/build/
+.idea
+.package-lock.json
