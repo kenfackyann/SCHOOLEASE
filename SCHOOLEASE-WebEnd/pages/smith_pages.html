@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Slider</title>
+    <link rel="stylesheet" href="../css/smith_style.css" />
+  </head>
+  <body>
+    <div class="articles-section">
+      <div class="articles-header">
+        <h2>Articles</h2>
+        <button id="show-more">Show More</button>
+      </div>
+      <div class="articles-slider" id="articles-slider">
+        <div class="article-card">
+          <img src="https://via.placeholder.com/150" alt="Article Image" />
+          <h3>Article Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article-card">
+          <img src="https://via.placeholder.com/150" alt="Article Image" />
+          <h3>Article Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article-card">
+          <img src="https://via.placeholder.com/150" alt="Article Image" />
+          <h3>Article Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article-card">
+          <img src="https://via.placeholder.com/150" alt="Article Image" />
+          <h3>Article Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article-card">
+          <img src="https://via.placeholder.com/150" alt="Article Image" />
+          <h3>Article Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article-card">
+          <img src="https://via.placeholder.com/150" alt="Article Image" />
+          <h3>Article Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('articles-slider');
+      const showMoreBtn = document.getElementById('show-more');
+    
+      let currentScrollPosition = 0;
+      const scrollAmount = 230; // Width of the card + margin
+    
+      function autoScroll() {
+        if (slider.classList.contains('grid-view')) return;
+        currentScrollPosition += scrollAmount;
+        if (currentScrollPosition >= slider.scrollWidth) {
+          currentScrollPosition = 0;
+        }
+        slider.scrollTo({
+          left: currentScrollPosition,
+          behavior: 'smooth'
+        });
+      }
+    
+      setInterval(autoScroll, 1000);
+    
+      showMoreBtn.addEventListener('click', () => {
+        slider.classList.toggle('grid-view');
+      });
+    });
+    
+    
+    </script>
+  </body>
+</html>
