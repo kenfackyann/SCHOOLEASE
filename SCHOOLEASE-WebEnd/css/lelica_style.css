@@ -1,7 +1,86 @@
-#lelica{
-    background-color: blue;
+#lelica *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-p {
-  float: right;
-  margin-right: 20px;
+#lelica body{
+  min-height: 100hv;
+
+  background-color: #EFEFEF;
+
 }
+#lelica nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#lelica .nav_links{
+  display: none;
+
+}
+.logo p{
+  font-size: 25px;
+  font-weight: bold;
+  color: #36B37E;
+}
+.hamburger{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+  flex-direction: column;
+} 
+.hamburger p{
+padding: 1px 15px;
+color: black;
+font-size: 25px;
+font-weight: bold;
+background-color: black;
+}
+.home{
+  position: relative;
+  width: 100%;
+  background-image: url(./img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 25px;
+  height: 250px;
+}
+
+.intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 2px 10px;
+}
+.intro h2{
+  font-size: 40px;
+}
+.paragraph{
+  font-size: 25px;
+}
+.home_button{
+  margin-right: 10px;
+  margin-top: 20px;
+
+  display: flex;
+justify-content: right;
+  align-items: end;
+
+}
+.home_button button{
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #265DF2;
+}
+
+
+
