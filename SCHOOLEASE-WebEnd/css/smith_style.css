@@ -1,12 +1,12 @@
   /* Reset some default styles */
-  * {
+ #goldsmith * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
   /* Navbar styles */
-  nav {
+ #goldsmith nav {
     background-color: #f2f2f2;
     position: sticky;
     top: 0;
