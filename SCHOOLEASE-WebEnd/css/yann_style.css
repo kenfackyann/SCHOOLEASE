@@ -7,8 +7,15 @@
     width: 100%;
     background-color: #def1fd;
     padding: 40px 0;
+    height: 300px;   
+     display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
   }
   .slide-container h2 {
+    margin-top: 0px;
+
     font-size: 20px;
   }
   .slide-content {
@@ -16,18 +23,22 @@
  
     overflow: hidden; 
     border-radius: 25px;
-    
+      width: 800px;
 
   }
   .card-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
+  
   }
   .card {
     border-radius: 25px;
     background-color: #fff;
     margin-bottom: 20px;
+    max-width: 300px;
+    width: 300px;
+  
   }
   .image-content,
   .card-content {
