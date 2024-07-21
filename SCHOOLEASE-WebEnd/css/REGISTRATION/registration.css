@@ -1,3 +1,51 @@
-body{
-    background-color: pink;
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+   
+    
 }
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    background-color: aqua;
+    padding: 20px 5px;
+    height: 350px;
+    border-radius: 30px;
+}
+.name_section{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+}
+label{
+    font-weight: bold;
+}
+input{
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.gender_email {
+display: flex;
+flex-direction: row;
+gap: 30px;
+}
+.purpose select{
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid gray;
+
+}
+.registration_button input{
+    height: 30px;
+    width: 100px;
+}
+
