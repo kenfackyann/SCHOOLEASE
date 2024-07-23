@@ -1,0 +1,28 @@
+#ange {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .hero {
+    background-image: url('SCHOOLEASE-WebEnd/img/hero section.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: black;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
