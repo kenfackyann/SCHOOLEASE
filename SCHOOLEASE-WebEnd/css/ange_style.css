@@ -10,7 +10,7 @@
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content:left
+    justify-content:left;
     align-items: left;
   }
   
