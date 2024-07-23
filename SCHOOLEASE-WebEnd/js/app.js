@@ -8,5 +8,5 @@ includeHTML('yann','/pages/yann_page.html');
 includeHTML('ange','/pages/ange_page.html');
 includeHTML('lelica','/pages/lelica_page.html');
 includeHTML('jeanClaude','/pages/s');
-includeHTML('maisy','/pages/s');
+includeHTML('maisy','/pages/maisy_page');
 includeHTML('tessoh','/pages/s');
