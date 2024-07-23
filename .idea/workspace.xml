@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-BackEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE-BackEnd/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-BackEnd/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE-BackEnd/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +14,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -43,5 +42,16 @@
       <updated>1720881475374</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
