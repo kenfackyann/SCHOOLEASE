@@ -1,0 +1,56 @@
+#maisy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha);
+    max-width: 1200px;
+    width: 100%;
+}
+.text-container {
+    max-width: 600px;
+}
+.text-container h2 {
+    color: #00A0E9;
+    font-size: 24px;
+}
+.text-container h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+.text-container .highlight {
+    color: #00A0E9;
+}
+.sign-up {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.sign-up:hover {
+    background-color:  #444;
+    color: #444;
+}
+.text-container p {
+    font-size: 18px;
+    color: #666;
+}
+.images-section {
+    display: flex;
+    gap: 10px;
+}
+.image-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
