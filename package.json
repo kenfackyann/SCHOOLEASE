@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.2.2",
+    "express": "^4.19.2",
     "serve": "^14.2.3"
   }
 }
