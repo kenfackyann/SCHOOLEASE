@@ -7,5 +7,5 @@ includeHTML('goldsmith','/pages/smith_pages.html');
 includeHTML('yann','/pages/yann_page.html');
 includeHTML('ange','/pages/ange_page.html');
 includeHTML('lelica','/pages/lelica_page.html');
-includeHTML('maisy','/pages/s');
-includeHTML('tessoh','/pages/s');
+includeHTML('maisy','/pages/maisy_page.html');
+includeHTML('jessica','/pages/jessica_page.html');
