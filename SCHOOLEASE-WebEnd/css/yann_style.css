@@ -1,1 +1,53 @@
+#yann{
+    padding: 0px;
+}
+.ideal_school,.recomended_schools_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ideal_school{
+   
+    font-size: 25px;
+}
+.recomended_schools_heading{
+    text-align: center;
+    font-size: 45px;
+    font-weight: lighter;
+}
+.recomended_schools_heading span{
+    color: #00B2FF;
+}
+.recomended_schools_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recomended_school_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    flex-direction: column;
+    
+}
+.card_image{
+   
+}
+.card_image img{
+    width: 400px;
+    height: 450px;
+ border-radius: 25px;
+}
+.card_content{
+    display: flex;
+    justify-content: flex-start;
+  
+    flex-direction: column;
+}
+.card_title{
+    font-size: 40px;
+    margin:0px;
+}
 
