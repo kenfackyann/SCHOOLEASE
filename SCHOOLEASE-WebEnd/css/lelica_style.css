@@ -1,0 +1,41 @@
+.community_forum{
+    position: relative;
+    width: 100%;
+    background-color: #00b2ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 25px;
+    height: 250px;
+}
+.community_forum h2{
+    font-size: 50px;
+    padding: 10px;
+
+}
+.forum_paragraph p{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-size: 20px;
+    padding: 19px;
+}
+.signup_image img{ 
+  float: right;
+  margin: 10px;
+  width: 500px;
+  height: 280px;
+  margin-top: -268px;
+  margin-right: -20px;
+}
+.home_button {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 45px;
+    font-size: bold;
+    
+
+}
+
+
