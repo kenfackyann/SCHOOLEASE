@@ -1,0 +1,47 @@
+#jessica{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+
+}
+.registration_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+}
+.registration_image img{
+    
+    width: 600px;
+
+}
+.registration_content{
+     gap: 50px;
+}
+.registration_solution{
+    font-weight: bold;
+}
+.registration_title{
+    font-size: 30px;
+}
+.registration_title span{
+    color: #00B2FF;
+
+}
+.registration_signin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+.registration_button button{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: black;
+    color:white;
+
+}
