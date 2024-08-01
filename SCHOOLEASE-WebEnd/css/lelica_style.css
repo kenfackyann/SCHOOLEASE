@@ -20,7 +20,7 @@
     font-size: 20px;
     padding: 19px;
 }
-img{
+.signup_image img{ 
   float: right;
   margin: 10px;
   width: 500px;
