@@ -36,6 +36,7 @@
     align-content: center;
     justify-content: start;
     gap: 100px;
+    overflow: hidden;
   }
   .topranking_card{
     display: flex;
