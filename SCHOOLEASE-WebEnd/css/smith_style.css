@@ -1,55 +1,80 @@
-  /* Reset some default styles */
- #goldsmith * {
+/* Custom Styles */
+#goldsmith :root {
+    --primary-color-blue: rgb(0, 178, 255);  /* Blue color */
+    --dark-color: black;
+    --background-light-blue: rgb(239, 242, 247);
+    --secondary-color-white: white; /* Light gray color */
+}
+  
+/* General Styles */
+#goldsmith * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    font-family: 'Space Grotesk', sans-serif;
+}
+  
+#goldsmith a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+#goldsmith .signup-motivation {
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1em;
+    margin: 10px 0;
+}
+#goldsmith .signup-motivation>p {
+    font-size: 1em;
+    flex: 1;
+}
+  
+#goldsmith .signup-motivation>.sign-up-btn {
+    flex: 1;
+    max-width: 150px;
+    max-height: 40px;
+    background-color: var(--dark-color);
+    color: var(--secondary-color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+}
+  
 
-  /* Navbar styles */
- #goldsmith nav {
-    background-color: #f2f2f2;
+  
+/* Navbar Styles */
+#goldsmith header {
+    background-color: var(--secondary-color-white);
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: blue;
-    
-  }
-
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    padding-bottom: 170%;
-    
-    
-  }
-
-  .nav-links li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: blue;
-    border-bottom: 2px solid blue;
-    border-radius: 2px;
+    z-index: 100;
+    filter: blur(5%);
+}
   
-  }
-
-
-  .hamburger {
+#goldsmith nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+#goldsmith .logo img {
+    height: 40px;
+}
+  
+#goldsmith .hamburger {
     display: none;
     cursor: pointer;
-  }
-
-  .bar {
+}
+  
+#goldsmith .bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -57,49 +82,158 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #333;
-  }
-
-  /* Media query for smaller devices */
-  @media (max-width: 768px) {
-    .nav-links {
-      position: absolute;
-      right: -100%;
-      top: 45px;
-      flex-direction: column;
-      background-color: #f2f2f2;
-      width: 50%;
-      text-align: center;
-      transition: 0.3s;
+}
+  
+#goldsmith .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 0.5;
+}
+  
+#goldsmith .nav-links li {
+    margin: 0 5px;
+}
+  
+#goldsmith .nav-links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: large;
+}
+#goldsmith .nav-links a:hover {
+    color: var(--primary-color-blue); 
+    font-weight: 600;
+}
+#goldsmith ul .sign {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#goldsmith .nav-links .sign-up {
+    color: var(--secondary-color-white);
+    background-color: var(--dark-color);
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+#goldsmith .sign-in {
+    border: 1px solid var(--dark-color);
+    background-color: rgb(240, 243, 243);
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+  
+#goldsmith .search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+    border-radius: 50px;
+    padding: 8px 16px;
+    width: 25%;
+}
+  
+#goldsmith .search-container input {
+    border: none;
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--dark-color);
+    color: var(--secondary-color-white);
+}
+  
+#goldsmith .search-container .search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+  
+#goldsmith .search-icon {
+    color: var(--secondary-color-white);
+    font-size: 20px; /* Adjust size as needed */
+}
+  
+@media (max-width: 900px) and (min-width: 768px) {
+    #goldsmith .section-child h2 { 
+        font-size: 45px;
     }
-
-    .nav-links.active {
-      right: 0;
+  
+    #goldsmith .sign-in {
+        display: none;
+    } 
+}
+  
+@media (max-width: 768px) {
+    #goldsmith .menu-toggle {
+        display: flex;
     }
-   .nav-links {
-    padding-top: 10px;
-   }
-    .nav-links li {
-      margin: 5px 0;
+  
+    #goldsmith .nav-links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--secondary-color-white);
+        border-top: 1px solid #ddd;
+        transition: transform 5s ease-out;
     }
-
-    .hamburger {
-      display: block;
+  
+    #goldsmith .nav-links li {
+        text-align: center;
+        margin: 10px 0;
     }
-
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
+  
+    #goldsmith .nav-links.active {
+        display: flex;
+        background-color: rgb(250, 250, 250);
+        padding-bottom: 10px;
     }
-
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+    #goldsmith .sign {
+        flex-direction: column;
     }
-
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+    #goldsmith .hamburger {
+        display: block;
     }
-  }
-
-  .go {
-    height: 1000px;
-    background-color: blue;
-  }
+  
+    #goldsmith .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+  
+    #goldsmith .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+  
+    #goldsmith .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    #goldsmith .search-container {
+        width: 35%;
+    }
+  
+    #goldsmith .section {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 10%;
+        height: auto;
+        padding: 0 20px;
+    }
+  
+    #goldsmith .section h2 {
+        font-size: 35px;
+    }
+    #goldsmith .section-child {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+  
+    #goldsmith .section-image {
+        order: 2;
+    }
+}
