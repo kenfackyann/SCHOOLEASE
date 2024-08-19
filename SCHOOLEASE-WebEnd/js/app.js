@@ -9,3 +9,4 @@ includeHTML('ange','/pages/ange_page.html');
 includeHTML('lelica','/pages/lelica_page.html');
 includeHTML('maisy','/pages/maisy_page.html');
 includeHTML('jessica','/pages/jessica_page.html');
+includeHTML('jessica2','/pages/jessica_page2.html');

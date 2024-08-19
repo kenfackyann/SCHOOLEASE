@@ -1,100 +1,119 @@
-
 const dbconnection = require('../database');
 const bcrypt = require('bcrypt');
 
-exports.signup = async(req,res) =>{
-   try {
-    let{firstName,lastName,emailAddress,password,accountType} = req.body;
-    let hashPassword = await bcrypt.hash(password,10);
-    await dbconnection.query(
-        'INSERT INTO user(firstName,lastName,emailAddress,password,accountType) VALUES (?,?,?,?,?)',[firstName,lastName,emailAddress,hashPassword,accountType]
-    );
-    const user_inserted = await dbconnection.query(
-        'SELECT * FROM user WHERE id IN(SELECT MAX(id) FROM user )  '
-    );
-    res.status(201).send({
-        success: true,
-        data: user_inserted,
-        message: 'saved successful'
-    })
-        
-
-   } catch (error) {
-    res.status(500).send({
-        success:false,
-        data: [],
-        message: "error on server"+error.stack
-    })
-   }
-    
-}
-exports.signin = async(req,res) =>{
+// Signup Function
+exports.signup = async (req, res) => {
     try {
-     let{email,password} = req.body;
+        const { firstName, lastName, emailAddress, password, accountType } = req.body;
+        const hashPassword = await bcrypt.hash(password, 10);
 
-     const user_found = await dbconnection.query(
-         'SELECT * FROM user WHERE email = ? AND password = ?', [email]
-     );
-     if(user_found[0].length===0){
-        res.status(401).send({
-            success:false,
-            data: [],
-            message:"wrong email or password"
-        })
-
-     }
-     else{
-        let user = user_found[0];
-        if(bcrypt.compare(password, user_found[0].password)){
-             res.status(201).send({
-            success:true,
-            data:user_found,
-            meessage:"saved successfully"
-        })
-    }
-        else{
-            res.status(401).send({
-                success:true,
-                data:user_found,
-                meessage:"wrong password"
-            })
-        }
-        
-       
-     }
-
-} catch (error) {
-     res.status(500).send({
-         success:false,
-         data: [],
-         message: "error on server"+error.stack
-     })
-    }
-     
- }
- exports.updateUser = async(req, res) => {
-    try {
-        let {name, email,password} = req.body;
-        let id = req.query.id;
-        let hashPassword = await bcrypt.hash(password,10);
-       await dbconnection.query(
-            "UPDATE user SET name = ?, email = ?,password = ? WHERE id= ?",
-             [name, email,hashPassword ,id]
-            );
-        const updateStudent = await dbconnection.query(
-            "SELECT * FROM student WHERE id = ?",
-            [id]
+        await dbconnection.query(
+            'INSERT INTO user (firstName, lastName, emailAddress, password, accountType) VALUES (?, ?, ?, ?, ?)',
+            [firstName, lastName, emailAddress, hashPassword, accountType]
         );
+
+        const userInserted = await dbconnection.query(
+            'SELECT * FROM user WHERE id IN(SELECT MAX(id) FROM user)'
+        );
+
         res.status(201).send({
             success: true,
-            data: updateUser[0],
-            message: 'Successfully Updated'
+            data: userInserted[0],
+            message: 'User saved successfully'
         });
     } catch (error) {
         res.status(500).send({
             success: false,
             data: [],
-            message: error.stack
+            message: "Server error: " + error.message
         });
     }
+};
+
+// Signin Function
+
+exports.signin = async (req, res) => {
+    try {
+        let {emailAddress, password} = req.body;
+
+        const user_found = await dbconnection.query(
+            'SELECT * FROM user WHERE emailAddress = ?', [emailAddress]
+        );
+
+        if(user_found[0].length===0){
+            res.status(401).send({
+                success: false,
+                data: [],
+                message: "Wrong email"
+            })
+        }else{
+            let verifyPassword = await bcrypt.compare(password, user_found[0][0].password);
+            if(verifyPassword){
+                res.status(201).send({
+                    success: true,
+                    data: user_found[0],
+                    message: 'Successfully Login'
+                });
+            }else{
+                res.status(401).send({
+                    success: false,
+                    data: [],
+                    message: 'Wrong password'
+                });
+            }
+        }
+    } catch (error) {
+        res.status(500).send({
+            success: false,
+            data: [],
+            message: "Error on server: "+error.stack
+        })
+    }
 }
+// Update User Function
+exports.updateUser = async (req, res) => {
+    try {
+        const { firstName, lastName, emailAddress, password, accountType } = req.body;
+        const id = req.query.id;
+
+        if (!id) {
+            return res.status(400).send({
+                success: false,
+                data: [],
+                message: "User ID is required"
+            });
+        }
+
+        const hashPassword = await bcrypt.hash(password, 10);
+
+        await dbconnection.query(
+            "UPDATE user SET firstName = ?, lastName = ?, emailAddress = ?, password = ?, accountType = ? WHERE id = ?",
+            [firstName, lastName, emailAddress, hashPassword, accountType, id]
+        );
+
+        const [updatedUser] = await dbconnection.query(
+            "SELECT * FROM user WHERE id = ?",
+            [id]
+        );
+
+        if (updatedUser.length === 0) {
+            return res.status(404).send({
+                success: false,
+                data: [],
+                message: "User not found"
+            });
+        }
+
+        res.status(200).send({
+            success: true,
+            data: updatedUser[0],
+            message: 'User updated successfully'
+        });
+    } catch (error) {
+        res.status(500).send({
+            success: false,
+            data: [],
+            message: "Server error: " + error.message
+        });
+    }
+};
