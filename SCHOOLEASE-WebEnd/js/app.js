@@ -10,3 +10,4 @@ includeHTML('lelica','/pages/lelica_page.html');
 includeHTML('maisy','/pages/maisy_page.html');
 includeHTML('jessica','/pages/jessica_page.html');
 includeHTML('jessica2','/pages/jessica_page2.html');
+includeHTML('maisy2','/pages/maisy_page2.html');

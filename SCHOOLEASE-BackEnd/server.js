@@ -8,8 +8,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extends: true }));
 const auth_route =require('./src/routes/auth_route');
+const univ_route =require('./src/routes/univ_route');
 // app.use(cors());
 app.use('/auth',auth_route)
+app.use('/univ',univ_route)
+
 //start the server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
