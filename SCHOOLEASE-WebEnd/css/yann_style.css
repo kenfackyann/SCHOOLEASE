@@ -1,83 +1,165 @@
-#yann{
-    padding-top: 30px;
-  background-color:#EFF2F7 ;
-  }
-  .arrow {
-    margin-right: 10px;
-      transform: rotate(45deg); 
-      color: #00B2FF;
-    }
-  .topranking_title{
-    color: black;
-    font-weight: bolder;
-    padding: 25px 0;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-  }
-  .topranking_para{
-    color: black;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    
-  }
-  .topranking_para span{
-    color: #00B2FF;
-  }
-  .topranking_cards{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: start;
-    gap: 100px;
-    overflow: hidden;
-  }
-  .topranking_card{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin: 25px 0;
-  max-width: 400px;
+#yann {
+  padding-top: 30px;
+  background-color: #EFF2F7;
+}
+
+.arrow {
+  margin-right: 10px;
+  transform: rotate(45deg);
+  color: #00B2FF;
+}
+
+.topranking_title {
+  color: black;
+  font-weight: bolder;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.topranking_para {
+  color: black;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.topranking_para span {
+  color: #00B2FF;
+}
+
+.topranking_cards {
+  display: flex;
+  flex-direction: row; /* Keep flex direction as row */
+  align-content: center;
+  justify-content: start;
+  gap: 50px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding-bottom: 20px; /* Add some space below for scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  scrollbar-width: none; /* Firefox: Hide scrollbar */
+}
+
+/* WebKit-based browsers (Chrome, Safari) */
+.topranking_cards::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.topranking_card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 10px 0; /* Reduced margin for tighter layout */
+  min-width: 250px; /* Set minimum width for consistent sizing */
+  max-width: 350px; /* Control max width */
+  flex: 0 0 auto; /* Prevent cards from stretching */
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardimage img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: left;
+  gap: 5px;
+}
+
+.cardtext_title {
+  color: black;
+}
+
+.cardtext_para {
+  color: black;
+}
+
+.cardtext_details a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .topranking_title,
+  .topranking_para {
+    flex-direction: column; /* Stack title and paragraph vertically */
+    padding: 15px 0;
+  }
+
+  .topranking_card {
+    min-width: 200px; /* Adjust card size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .topranking_title {
+    font-size: 20px; /* Smaller font size for title */
+  }
+
+  .topranking_para {
+    font-size: 20px; /* Smaller font size for paragraph */
+  }
+
+  .topranking_card {
+    min-width: 150px; /* Further adjust card size for mobile */
+  }
+}
+@media (max-width: 1200px) {
+  .topranking_cards {
+    gap: 50px; /* Reduce gap between cards */
+  }
   
-  
-  }
-  .cardimage{
-   
-    
-  
-  }
-  .cardimage img{
-    width: 350px;
-    height: 400px;
-    border-radius: 10px;
-  }
-  .cardtext{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    text-align: left;
-    gap: 5px;
-  
-  }
-  .cardtext_title{
-    color: black;
-  }
-  .cardtext_para{
-    color: black;
-  }
-  .cardtext_details a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
+  .topranking_card {
+    max-width: 300px; /* Reduce card width */
   }
   
+  .topranking_para {
+    font-size: 25px; /* Smaller font size for paragraph */
+  }
+}
+
+@media (max-width: 768px) {
+  .topranking_title, .topranking_para {
+    flex-direction: column; /* Stack title and paragraph vertically */
+    padding: 15px 0; /* Reduce padding */
+  }
+
+
+  .topranking_card {
+    margin: 15px 0; /* Reduce margin */
+    max-width: 90%; /* Expand card width to 90% */
+  }
+}
+
+@media (max-width: 480px) {
+  .topranking_title {
+    font-size: 20px; /* Smaller font size for title */
+  }
+
+  .topranking_para {
+    font-size: 20px; /* Smaller font size for paragraph */
+  }
+
+  .topranking_cards {
+    gap: 20px; /* Further reduce gap between cards */
+  }
+
+  .topranking_card {
+    padding: 10px; /* Reduce padding */
+  }
+}
