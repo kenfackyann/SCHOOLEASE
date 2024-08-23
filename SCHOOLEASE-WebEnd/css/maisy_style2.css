@@ -68,6 +68,7 @@
 .features{
     display: flex;
     flex-direction: column;
+    justify-content: right;
 }
 .footer .links div a {
 
