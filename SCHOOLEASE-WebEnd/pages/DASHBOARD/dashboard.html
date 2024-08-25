@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../css/DASHBOARD/dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/DASHBOARD/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <nav>
+       
+        <div class="top"> 
+            
+            <div class="left-nav">
+
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+            
+                <div class="logo">
+                    <img src="../../img/dashboard_images/logo.png" alt="logo">
+                    <h2> <span>School</span>ease</h2>
+                        </div>
+                       
+
+            </div>
+
+            <div class="middle-nav">
+                
+                    <div class="search-bar">
+                        <span class="material-icons-sharp">search</span>  
+                      <input type="text" placeholder="Search" class="search-input">
+                    </div>
+                    <span class="material-icons-sharp filter">tune</span> 
+                
+            </div>
+           
+   
+    <div class="right-nav">
+    <div class="theme-toggler">
+        <span class="material-icons-sharp active">light_mode</span>
+        <span class="material-icons-sharp">dark_mode</span>
+
+    </div>
+    <div>
+        <span class="material-icons-sharp bell">notifications</span>
+    </div>
+   
+    <div class="profile">
+        <div class="info">
+            <p>Hey, <b>Daniel</b></p>
+            <small class="text-muted">Admin</small>
+
+        </div>
+        <div class="profile-photo">
+            <img src="../../img/dashboard_images/profile-1.jpg" alt="">
+        </div>
+    </div>
+</div>
+            
+         
+        </div>
+    </nav>
+
+
+    <div class="container">
+        
+        <aside>
+         
+<!-- sidebar -->
+<div class="top">
+    <div class="logo">
+<img src="../../img/dashboard_images/logo.png" alt="logo">
+<h2> <span>School</span>ease</h2>
+    </div>
+    <div class="close" id="close-btn">
+
+        <span class="material-icons-sharp">close</span>
+    </div>
+   
+</div>
+
+
+<div class="sidebar">
+    <a href="#" class="active">
+        <span class="material-icons-sharp">home</span>
+        <h3>Home</h3>
+    </a>
+    <a href="#" >
+        <span class="material-icons-sharp">school</span>
+        <h3>Schools</h3>
+    </a>
+    <a href="#">
+        <span class="material-icons-sharp">bookmarks</span>
+        <h3>Favorites</h3>
+    </a>
+    <a href="#">
+        <span class="material-icons-sharp">bar_chart</span>
+        <h3>Compare Schools</h3>
+    </a>
+
+    <p class="horizontal-line"></p>
+    <p class="module-content">News</p>
+
+    <a href="../ARTICLES/article_page.html">
+        <span class="material-icons-sharp">update</span>
+        <h3>Articles</h3>
+        <span class="message-count">26</span>
+    </a>
+  
+    <a href="#">
+        <span class="material-icons-sharp">paid</span>
+        <h3>Financial Aid</h3>
+    </a>
+    <a href="#">
+        <span class="material-icons-sharp">forum</span>
+        <h3>Community</h3>
+    </a>
+
+    <p class="horizontal-line"></p>
+    <p class="module-content">Help</p>
+
+    <a href="#">
+        <span class="material-icons-sharp">lightbulb</span>
+        <h3>Ask AI</h3>
+    </a>
+    
+    <a href="#">
+        <span class="material-icons-sharp">verified_user</span>
+        <h3>Tearms of Use</h3>
+    </a>
+
+
+    <a href="#">
+        <span class="material-icons-sharp">settings</span>
+        <h3>settings</h3>
+    </a>
+    <a href="#">
+        <span class="material-icons-sharp">logout</span>
+        <h3>Logout</h3>
+    </a>
+</div>
+
+
+<!-- END OF TOP -->
+
+        </aside>
+        <!-- ---------------END OF ASIDE  ----------------- -->
+
+
+<!-- START OF MAIN -->
+
+
+
+
+<main>
+    <h1>Top Schools</h1>
+
+<!-- swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Slide elements will be injected here by JavaScript -->
+
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next swiper-btn"></div>
+    <div class="swiper-button-prev swiper-btn"></div>
+</div>
+
+
+<div class="charts">
+
+<h2>Exams Results</h2>
+
+    <div class="charts-card">
+        <div class="chart-title-options">
+      <a href="#" class="chart-title chart-title-active">HND</a>
+     <a href="#" class="chart-title">Masters</a>
+      <a href="#" class="chart-title">PhD</a>
+     </div>  
+     <div id="bar-chart"></div>
+   
+    </div>
+
+
+  </div>
+
+
+  
+
+      <!-- --------------- START OF ORDERS ---------------- -->
+    <div class="recent-orders">
+     
+       <table>
+        <h2>Compare Schools</h2>
+        <thead>
+            <tr>
+                <th>School Name</th>
+                <th>Location</th>
+                <th>Fees</th>
+                <th>Financial Aid</th>
+                <th>...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>YIBS</td>
+                <td>Yaounde</td>
+                <td>150,000frs</td>
+                <td class="success">Yes</td>
+                <td class="primary">Details</td>
+          
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>NAHPI</td>
+                <td>Bamenda</td>
+                <td>50,000frs</td>
+                <td class="danger">No</td>
+                <td class="primary">Details</td>
+          
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>NAHPI</td>
+                <td>Bamenda</td>
+                <td>50,000frs</td>
+                <td class="danger">No</td>
+                <td class="primary">Details</td>
+          
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>NAHPI</td>
+                <td>Bamenda</td>
+                <td>50,000frs</td>
+                <td class="danger">No</td>
+                <td class="primary">Details</td>
+          
+            </tr>
+        </tbody>
+       </table>
+       <a href="#">Show All</a>
+    </div>
+</main>
+  <!-- --------------- END OF MAIN ---------------- -->
+
+<div class="right">
+  
+<div class="recent-updates">
+    <div class="flex-head">   
+        <h2>Updates</h2>
+    <a href="#" class="view-all"> View All</a>
+</div>
+ 
+    <div class="updates">
+        <div class="update">
+            <div class="profile-photo">
+                <img src="../images/yibs.jpg" alt="">
+            </div>
+            <div class="message">
+                <p><b>YIBS</b> is offering fee reductions</p>
+                <small class="text-muted">04 April, 2024 | 04:00PM</small>
+            </div>
+           
+        </div>
+        
+        <div class="update">
+            <div class="profile-photo">
+                <img src="../images/exhist.jpg" alt="">
+            </div>
+            <div class="message">
+                <p><b>NAHPI</b> First semester results are...</p>
+                <small class="text-muted">04 Jul, 2024 | 04:00PM</small>
+            </div>
+         
+        </div>
+
+        <div class="update">
+            <div class="profile-photo">
+                <img src="../images/ictuniv.jpg" alt="">
+            </div>
+            <div class="message">
+                <p><b>ICTU</b> Admissions have begun...</p>
+                <small class="text-muted">19 Jan, 2024 | 04:00PM</small>
+            </div>
+           
+        </div>
+
+        <div class="update">
+            <div class="profile-photo">
+                <img src="../images/exhist.jpg" alt="">
+            </div>
+            <div class="message">
+                <p><b>EXHIST</b> Gradaution ceremony is...</p>
+                <small class="text-muted">11 Jan, 2024 | 04:00PM</small>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!-- END OF RECENT UPDATES -->
+
+<div class="sales-analytics">
+
+
+    <div class="recent-updates">
+        <div class="flex-head">   
+            <h2>Messages</h2>
+        <a href="#" class="view-all"> View All</a>
+    </div>
+     
+        <div class="updates">
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="../images/profile-1.jpg" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Yann</b></p>
+                    <small class="text-muted">Yo</small>
+                </div>
+               
+            </div>
+            
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="../images/profile-2.jpg" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Glain</b></p>
+                    <small class="text-muted">Non je sais pas</small>
+                </div>
+             
+            </div>
+    
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="../images/profile-3.jpg" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Megan</b></p>
+                    <small class="text-muted">30</small>
+                </div>
+               
+            </div>
+    
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="../images/profile-4.jpg" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Kyotaka</b></p>
+                    <small class="text-muted">The White Room</small>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+ 
+
+    <script src="../../js/DASHBOARD/swiper-bundle.min.js"></script>
+
+    <script src="../../js/DASHBOARD/dashboard.js"></script>
+</body>
+</html>
