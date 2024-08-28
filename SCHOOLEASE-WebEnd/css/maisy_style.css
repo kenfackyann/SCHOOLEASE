@@ -4,9 +4,8 @@
     align-items: center;
     padding: 20px;
     background-color: #EFF2F7;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(red, green, blue, alpha);
-    width: 100%;
     gap: 10px;
 }
 .text-container {
