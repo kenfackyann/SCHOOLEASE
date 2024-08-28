@@ -2,10 +2,10 @@ const dbconnection = require('../database');
 
 exports.getUniversity = async(req, res) => {
     try {
-        const University = await dbconnection.query('SELECT * FROM University');
+        const University = await dbconnection.query('SELECT * FROM Universities ');
         res.status(200).send({
             success: true,
-            data: University[0],
+            data: University,
             message: 'Success'
         });
     } catch (error) {
