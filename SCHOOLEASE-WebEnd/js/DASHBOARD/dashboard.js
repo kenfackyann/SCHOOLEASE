@@ -165,5 +165,30 @@ chartTitles.forEach(title => {
   });
 });
 
+function loadSection(section) {
 
+  fetch(`${section}.html`) 
+  .then(response => response.text())
+  .then(html => {
+    mainContent.innerHTML = html;
+    const newChart = document.querySelector('.chart');
+    if (newChart) {
+      newChart.innerHTML = '';
+      data.forEach(value => {
+        const bar = document.createElement('div');
+        bar.classList.add('bar');
+        const barHeight = (value / maxValue) * 300;
+        bar.style.height = `${barHeight}px`;
+        const label = document.createElement('span');
+        label.textContent = value.toString();
+        bar.appendChild(label);
+        newChart.appendChild(bar);
+      });
+    }
+    if (section === 'home') {
+      fetchTestData();
+    }
+  })
+
+}
   
