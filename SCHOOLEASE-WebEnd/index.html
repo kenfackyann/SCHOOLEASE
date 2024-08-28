@@ -19,10 +19,42 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <link rel="stylesheet" href="./css/smith_style.css">
   </head>
 
   <body>
-    <section id="goldsmith"></section>
+    <section id="goldsmith">
+      <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/image.jpeg" alt="Logo">
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search For School">
+                <button class="search-btn"><i class="fas fa-search search-icon"></i></button>
+            </div>
+
+            <div class="hamburger " onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#schools">Schools</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="sign">
+                    <li><a href="./pages/DASHBOARD/dashboard.html" class="dashboard">Dashboard</a></li>
+                    <li><a href="./pages/AUTENTICATION/login.html" class="sign-in">Sign In</a></li>
+                    <li><a href="./pages/REGISTRATION/registration_page.html" class="sign-up">Sign Up</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    </section>
     <section id="ange"></section>
      <section id="maisy"></section>
      <section id="jessica"></section>
@@ -33,8 +65,8 @@
 
    
     
-   
+    <script src="./js/smith_script.js"></script>
     <script src="./js/app.js"></script>
-     <!-- <script src="./js/smith_script.js"></script> -->
+    
   </body>
 </html>
