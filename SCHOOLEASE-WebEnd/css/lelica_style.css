@@ -1,41 +1,154 @@
-.community_forum{
-    position: relative;
+/* Base Styles */
+.community_forum {
     width: 100%;
     background-color: #00b2ff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    padding-bottom: 25px;
-    height: 250px;
+    height: 282px;
 }
-.community_forum h2{
+
+.community_forum h2 {
     font-size: 50px;
     padding: 10px;
+}
 
+.forum_paragraph p {
+    font-size: 35px;
+    font-weight: bold;
 }
-.forum_paragraph p{
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    font-size: 20px;
-    padding: 19px;
+
+.signup_image img { 
+    float: right;
+    margin: 10px;
+    width: 500px;
+    height: 280px;
+    margin-top: -203px;
+    margin-right: -20px;
 }
-.signup_image img{ 
-  float: right;
-  margin: 10px;
-  width: 500px;
-  height: 280px;
-  margin-top: -268px;
-  margin-right: -20px;
-}
+
 .home_button {
     display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-top: 45px;
-    font-size: bold;
-    
-
+    align-items: center;
+    justify-content: center;
+    margin-top: -160px;
 }
 
+.home_button button {
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .community_forum h2 {
+        font-size: 40px;
+    }
+
+    .forum_paragraph p {
+        font-size: 30px;
+    }
+
+    .signup_image img {
+        width: 400px;
+        height: auto;
+        margin-top: -150px;
+        margin-right: -10px;
+    }
+
+    .home_button button {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .community_forum {
+        height: 200px;
+    }
+
+    .community_forum h2 {
+        font-size: 30px;
+    }
+
+    .forum_paragraph p {
+        font-size: 24px;
+    }
+
+    .signup_image img {
+        width: 300px;
+        height: auto;
+        margin-top: -100px;
+        margin-right: 0;
+    }
+
+    .home_button {
+        margin-top: -120px;
+    }
+
+    .home_button button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .community_forum {
+        height: 150px;
+    }
+
+    .community_forum h2 {
+        font-size: 24px;
+    }
+
+    .forum_paragraph p {
+        font-size: 20px;
+    }
+
+    .signup_image img {
+        width: 250px;
+        height: auto;
+        margin-top: -80px;
+    }
+
+    .home_button {
+        margin-top: -80px;
+    }
+
+    .home_button button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .community_forum {
+        height: 120px;
+    }
+
+    .community_forum h2 {
+        font-size: 20px;
+    }
+
+    .forum_paragraph p {
+        font-size: 18px;
+    }
+
+    .signup_image img {
+        width: 200px;
+        height: auto;
+        margin-top: -60px;
+    }
+
+    .home_button {
+        margin-top: -60px;
+    }
+
+    .home_button button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
