@@ -45,6 +45,7 @@ justify-content: center;
 flex-direction: row;
 display: flex;
 gap: 50px;
+overflow-y: hidden;
 
 }
 .feedback-card-message{
@@ -83,4 +84,7 @@ border-radius: 20px;
 color: aliceblue;
 width: 150px; ;
 height: 40px;
+}
+@media (max-width:400px){
+  
 }
