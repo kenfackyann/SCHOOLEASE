@@ -2,8 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+})
+
+
+
 function toggleMenu() {
-  const navLinks = document.querySelector('#goldsmith');
+  const navLinks = document.querySelector('.nav-links');
   const hamburger = document.querySelector(' .hamburger');
 
   // Toggle class 'active' on hamburger and nav-links
@@ -13,10 +19,3 @@ function toggleMenu() {
 
   
 }
-
-const hamburger = document.querySelector('nav');
-console.log(hamburger);
-
-})
-
-
