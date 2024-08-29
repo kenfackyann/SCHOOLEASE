@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../img/herosection.jpg');
+    background-image:url(../img/hero_section.jpg);
     height: 500px;
     background-size: cover;
     display: flex;
