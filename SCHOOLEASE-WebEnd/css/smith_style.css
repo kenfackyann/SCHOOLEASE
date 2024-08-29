@@ -39,6 +39,14 @@
 #goldsmith .logo img {
     height: 40px;
 }
+#goldsmith .logo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+#goldsmith .logo span{
+  color: #00b2ff;
+}
 
 #goldsmith .hamburger {
     display: none;
@@ -192,4 +200,11 @@
         text-align: center;
         margin: 10px 0;
     }
+}
+@media (max-width:400px) {
+    #goldsmith .logo .logo-title{
+        display: none;
+        
+      }
+    
 }
