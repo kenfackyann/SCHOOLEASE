@@ -1,0 +1,45 @@
+<nav class="bg-gray-800 items-center w-full p-4">
+  <div class="container mx-auto flex left-0 justify-between items-center">
+    <div class="items-center flex gap-8">
+      <img alt="Logo" class="h-8 w-auto" src="logo.png">
+      <div class="hidden md:flex items-center bg-gray-700 rounded-full ">
+        <input class="bg-transparent text-white px-4 py-2 focus:outline-none" placeholder="Search For School"
+               type="text">
+        <button class="bg-secondary text-white px-4 py-2 focus:outline-none">
+          <svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hamburger space-y-1 cursor-pointer lg:hidden" onclick="toggleMenu()">
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+    </div>
+    <ul class=" items-center gap-4 justify-evenly lg:flex text-teal-50 hidden">
+      <li class="hover:underline hover:text-sky-800 hover:underline-offset-8"><a
+        href="./pages/DASHBOARD/dashboard.html">Home</a></li>
+      <li><a href="./pages/DASHBOARD/Schools.html">Schools</a></li>
+      <li><a href="./pages/ARTICLES/article_page.html">Articles</a></li>
+      <li><a href="./pages/">Contact</a></li>
+
+      <div class="grid grid-cols-2 gap-4 items-center">
+        <li>
+          <button class="rounded bg-white text-gray-800 border  border-gray-300 px-4 py-2 m-4 hover:bg-gray-100">
+            Sign In
+          </button>
+        </li>
+        <li>
+          <button
+            class="rounded text-teal-50 bg-gray-950 px-4 py-2 m-4 hover:bg-gray-900  border-gray-300 ">
+            Sign Up
+          </button>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>

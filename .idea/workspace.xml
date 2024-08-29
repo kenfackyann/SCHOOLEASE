@@ -4,45 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/capacitor.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/ionic.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/home/home-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/home/home.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/home/home.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/home/home.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/home/home.page.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/app/home/home.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/assets/icon/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/assets/shapes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/theme/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/src/zone-flags.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-MobileEnd/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="[feat]  - init">
+      <change afterPath="$PROJECT_DIR$/SCHOOLEASE/public/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,39 +22,56 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev_branch" />
+        <entry key="$PROJECT_DIR$" value="develop_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DNP-LR"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DNP-LR&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kenfackyann/SCHOOLEASE.git",
-    "accountId": "bbad73da-8ea8-4158-b807-59dc43a50de4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kenfackyann/SCHOOLEASE.git&quot;,
+    &quot;accountId&quot;: &quot;bbad73da-8ea8-4158-b807-59dc43a50de4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2jCC2LYAw5DyU8RNYGcr4AIPioc" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js.app.component.ts.executor": "Run",
+    "Node.js.index.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "donfack__branch",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dell/Desktop/SCHOOLEASE"
+    "last_opened_file_path": "C:/Users/noubi/IdeaProjects/SCHOOLEASE/SCHOOLEASE/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\noubi\\IdeaProjects\\SCHOOLEASE\\SCHOOLEASE\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\noubi\IdeaProjects\SCHOOLEASE\SCHOOLEASE\public" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -115,7 +102,17 @@
       <option name="presentableId" value="Default" />
       <updated>1720881475374</updated>
       <workItem from="1724899125026" duration="104000" />
+      <workItem from="1724899640928" duration="3440000" />
     </task>
+    <task id="LOCAL-00001" summary="[feat]  - init">
+      <option name="closed" value="true" />
+      <created>1724899821224</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724899821224</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +128,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[feat]  - init" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]  - init" />
   </component>
 </project>
