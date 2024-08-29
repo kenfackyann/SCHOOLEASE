@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="[feat]  - init">
-      <change afterPath="$PROJECT_DIR$/SCHOOLEASE/public/logo.png" afterDir="false" />
+    <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="[feat]  - header">
+      <change afterPath="$PROJECT_DIR$/SCHOOLEASE/public/herosection.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/app/features/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/app/features/home/home.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720881475374</updated>
       <workItem from="1724899125026" duration="104000" />
-      <workItem from="1724899640928" duration="3440000" />
+      <workItem from="1724899640928" duration="3935000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]  - init">
       <option name="closed" value="true" />
@@ -112,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724899821224</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[feat]  - header">
+      <option name="closed" value="true" />
+      <created>1724903106916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724903106916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feat]  - init" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]  - init" />
+    <MESSAGE value="[feat]  - header" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]  - header" />
   </component>
 </project>
