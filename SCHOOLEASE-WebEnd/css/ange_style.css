@@ -12,8 +12,8 @@
   }
   
   .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    /* font-size: 3rem;
+    margin-bottom: 20px; */
   }
   
   .hero p {
@@ -36,3 +36,9 @@
     background-color: #333;
     color: #fff;
   }
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 5px;
+      
+  }
+}
