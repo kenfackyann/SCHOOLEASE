@@ -4,44 +4,116 @@
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-
+    background-color: #a3daff;
+padding: 20px;
+flex-wrap: wrap;
 }
 .registration_image{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 50px;
+    max-width: 400px;
+    min-width: 100px;
+   
 }
-.registration_image img{
+
+.registration_image img {
     
-    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
 
-}
-.registration_content{
-     gap: 50px;
-}
-.registration_solution{
-    font-weight: bold;
-}
-.registration_title{
-    font-size: 30px;
-}
-.registration_title span{
-    color: #00B2FF;
-
-}
-.registration_signin{
+.registration_content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.registration_solution {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.registration_title h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.registration_title span {
+    color: #00B2FF;
+}
+
+.registration_signin {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
-.registration_button button{
+
+.registration_button button {
     width: 150px;
     height: 35px;
     border-radius: 15px;
     background-color: black;
-    color:white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
+.registration_description {
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .registration_content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .registration_image {
+        padding-right: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    #jessica{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        background-color: #a3daff;
+    padding: 20px;
+    flex-wrap: wrap;
+    }
+
+    .registration_content {
+        padding: 10px;
+    }
+
+    .registration_title h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .registration_description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .registration_title h2 {
+        font-size: 1.2rem;
+    }
+
+
+
+    .registration_description {
+        font-size: 0.8rem;
+    }
 }

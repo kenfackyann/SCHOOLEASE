@@ -3,11 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
+    background-color: #EFF2F7;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(red, green, blue, alpha);
-    max-width: 1200px;
-    width: 100%;
+    gap: 10px;
 }
 .text-container {
     max-width: 600px;
@@ -53,4 +52,10 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+}
+@media screen and (max-width: 600px)
+{
+    #maisy{
+      flex-direction: column;
+    }  
 }

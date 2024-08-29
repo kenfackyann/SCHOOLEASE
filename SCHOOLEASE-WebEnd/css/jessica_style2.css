@@ -1,0 +1,90 @@
+#jessica2{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  background-color: #a3daff;
+  padding: 50px;
+
+
+}
+
+.feed-back-content{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+
+
+
+}
+.feedback-header-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+}
+.feedback-arrows{
+ display: flex;
+flex-direction: row;
+gap: 10px;
+}   
+.feedback-circles{ 
+
+background-color: blue;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.feedback-cards{
+justify-content: center;
+flex-direction: row;
+display: flex;
+gap: 50px;
+overflow-y: hidden;
+
+}
+.feedback-card-message{
+font-size: 18px;
+}
+.feedback-card{
+display: flex;
+flex-direction: column;
+padding: 20px;
+border-radius: 20px;
+max-width: 200px;
+background-color: antiquewhite;
+justify-content: space-between;
+gap: 20px;
+
+}
+.feed-back-signin{
+    display:flex;
+  align-items: center;
+  gap: 20px; 
+
+
+}
+.feedback-title{
+font-weight: bold;
+
+
+
+
+font-size: 25px;
+
+}
+.signing-button button{
+background-color: black;
+border-radius: 20px;
+color: aliceblue;
+width: 150px; ;
+height: 40px;
+}
+@media (max-width:400px){
+  
+}
