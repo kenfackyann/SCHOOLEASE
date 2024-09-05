@@ -1,13 +1,128 @@
-<app-header/>
-<section class="relative bg-cover bg-center h-screen" style="background-image: url('herosection.jpg');">
-  <div class="absolute inset-0 bg-black opacity-50"></div>
-  <div class="relative z-10 flex items-center justify-center h-full text-white">
-    <div class="text-center">
-      <h1 class="text-5xl font-bold mb-4">Find Your Perfect School</h1>
-      <p class="text-xl mb-8">Discover the best schools tailored to your needs</p>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Start Searching
-      </button>
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="SCHOOLEASE Logo">
+    <h1>SCHOOLEASE</h1>
+  </div>
+  <nav class="nav">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#school-previews">schools</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Discover the Perfect School for Your Child</h2>
+    <p>Let our chatbot guide you to the best school based on your preferences.</p>
+    <!-- <button (click)="showChatbot()" class="btn">Get Started</button> -->
+  </div>
+  <div class="hero-image">
+    <img src="hero.jpg" alt="School Search">
+  </div>
+</section>
+
+<section id="features" class="features">
+  <h3>Why Choose SCHOOLEASE?</h3>
+  <div class="feature-list">
+    <div class="feature-item">
+      <img src="easytosearch.jpg" alt="Personalized Search">
+      <h4>Personalized Search</h4>
+      <p>Get matched with schools that meet your unique needs.</p>
+    </div>
+    <div class="feature-item">
+      <img src="quality.jpg" alt="Verified Information">
+      <h4>Verified Information</h4>
+      <p>We provide accurate, up-to-date information about schools.</p>
+    </div>
+    <div class="feature-item">
+      <img src="easy to use.jpg" alt="Easy to Use">
+      <h4>Easy to Use</h4>
+      <p>Our chatbot makes finding the perfect school simple and stress-free.</p>
     </div>
   </div>
 </section>
+<section id="how-it-works" class="how-it-works">
+  <h3>How It Works</h3>
+  <div class="steps">
+      <div class="step">
+          <img src="step1.jpg" alt="Step 1">
+          <h4>Start the Process</h4>
+          <p>Click the "Get Started" button to begin.</p>
+      </div>
+      <div class="step">
+          <img src="step2.jpg" alt="Step 2">
+          <h4>Answer Questions</h4>
+          <p>Provide your preferences and let our chatbot assist you.</p>
+      </div>
+      <div class="step">
+          <img src="step3.jpg" alt="Step 3">
+          <h4>Get Matched</h4>
+          <p>Receive a list of schools that match your criteria.</p>
+      </div>
+      <div class="step">
+          <img src="step4.jpg" alt="Step 4">
+          <h4>Connect</h4>
+          <p>Contact the schools directly through our platform.</p>
+      </div>
+  </div>
+</section>
+<section id="school-previews" class="school-previews">
+  <h3>Featured Schools</h3>
+  <div class="school-list">
+    <div class="school-item" *ngFor="let school of schools">
+      <img [src]="school.image" alt="{{ school.name }}" />
+      <h4>{{ school.name }}</h4>
+      <p>{{ school.description }}</p>
+      <!-- <button class="btn" (click)="viewSchoolDetails(school)">View More</button> -->
+    </div>
+  </div>
+</section>
+<section id="articles" class="articles">
+  <h3>Latest Articles</h3>
+  <div class="article-list">
+    <article class="article-item">
+      <img src="assets/article1.jpg" alt="Article 1">
+      <h4>Choosing the Right School: A Comprehensive Guide</h4>
+      <p>Learn how to select the best school for your child with our in-depth guide.</p>
+      <a href="#" class="btn">Read More</a>
+    </article>
+    <article class="article-item">
+      <img src="assets/article2.jpg" alt="Article 2">
+      <h4>The Importance of School Accreditation</h4>
+      <p>Understand why accreditation matters when choosing a school.</p>
+      <a href="#" class="btn">Read More</a>
+    </article>
+    <article class="article-item">
+      <img src="assets/article3.jpg" alt="Article 3">
+      <h4>Top 10 Schools in Your Area</h4>
+      <p>Discover the top-rated schools near you.</p>
+      <a href="#" class="btn">Read More</a>
+    </article>
+  </div>
+</section>
+
+<footer id="contact" class="footer">
+  <div class="footer-content">
+    <h4>Contact Us</h4>
+    <p>Email: infoschoolease.com</p>
+    <p>Phone: +123 456 7890</p>
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<!-- <div id="chatbot" *ngIf="chatbotVisible">
+  <div id="chatbot-header">
+    <h5>School Finder Bot</h5>
+    <span (click)="hideChatbot()" id="close-chatbot">&times;</span>
+  </div>
+  <div id="chatbot-body">
+    <p>Hi there! I can help you find the perfect school. Ready to get started?</p>
+    <button id="start-chat" class="btn">Start Chat</button>
+  </div>
+</div> -->
