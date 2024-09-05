@@ -8,7 +8,7 @@ exports.signup = async (req, res) => {
         const hashPassword = await bcrypt.hash(password, 10);
 
         await dbconnection.query(
-            'INSERT INTO user (firstName, lastName, emailAddress, password, accountType) VALUES (?, ?, ?, ?, ?)',
+            'INSERT INTO user (firstName, lastName, emailAddress, password, accountType,ownership) VALUES (?, ?, ?, ?, ?)',
             [firstName, lastName, emailAddress, hashPassword, accountType]
         );
 

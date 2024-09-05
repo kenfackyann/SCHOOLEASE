@@ -19,9 +19,9 @@ exports.getUniversity = async(req, res) => {
 
 exports.saveUniversity = async(req, res) => {
     try {
-        let {university_name,date_of_establishement,region,location,website} = req.body;
+        let {university_name,date_of_establishement,region,location,website,ownership} = req.body;
         const univ = await dbconnection.query(
-            "INSERT INTO universities(university_name,date_of_establishement,region,location,website) VALUES(?,?,?,?,?)", [university_name,date_of_establishement,region,location,website]);
+            "INSERT INTO universities(university_name,date_of_establishement,region,location,website,ownership) VALUES(?,?,?,?,?,?)", [university_name,date_of_establishement,region,location,website,ownership]);
         res.status(201).send({
             success: true,
             data: univ,
