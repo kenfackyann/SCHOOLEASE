@@ -5,20 +5,34 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/css/ange_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE-WebEnd/css/ange_style.css" afterDir="false" />
     </list>
 =======
     <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="" />
 >>>>>>> 6a3e4d9daef2274c28603fd39308423a6495af2a
+=======
+    <list default="true" id="c75321de-a7fb-42c0-b5bb-d53d0c3d887d" name="Changes" comment="[feat]  - header">
+      <change afterPath="$PROJECT_DIR$/SCHOOLEASE/public/herosection.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCHOOLEASE/src/app/features/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/SCHOOLEASE/src/app/features/home/home.component.html" afterDir="false" />
+    </list>
+>>>>>>> c9ada5b8bdb2afb965189348daf8e0d892db88d9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop_branch" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
     "state": "OPEN",
@@ -31,17 +45,36 @@
     "accountId": "98425cc4-ca6b-4b3a-bad3-110cbe25e2f2"
   }
 }]]></component>
+=======
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DNP-LR&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kenfackyann/SCHOOLEASE.git&quot;,
+    &quot;accountId&quot;: &quot;bbad73da-8ea8-4158-b807-59dc43a50de4&quot;
+  }
+}</component>
+>>>>>>> c9ada5b8bdb2afb965189348daf8e0d892db88d9
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2jCC2LYAw5DyU8RNYGcr4AIPioc" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js.app.component.ts.executor": "Run",
+    "Node.js.index.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "git-widget-placeholder": "ange__branch",
     "kotlin-language-version-configured": "true",
@@ -60,11 +93,51 @@
   </component>
 =======
     "git-widget-placeholder": "lelica__branch",
+=======
+    "git-widget-placeholder": "donfack__branch",
+>>>>>>> c9ada5b8bdb2afb965189348daf8e0d892db88d9
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dell/Desktop/SCHOOLEASE"
+    "last_opened_file_path": "C:/Users/noubi/IdeaProjects/SCHOOLEASE/SCHOOLEASE/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\noubi\\IdeaProjects\\SCHOOLEASE\\SCHOOLEASE\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+<<<<<<< HEAD
 >>>>>>> 6a3e4d9daef2274c28603fd39308423a6495af2a
+=======
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\noubi\IdeaProjects\SCHOOLEASE\SCHOOLEASE\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
+>>>>>>> c9ada5b8bdb2afb965189348daf8e0d892db88d9
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,11 +146,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720881475374</updated>
+<<<<<<< HEAD
       <workItem from="1723779930993" duration="126000" />
+=======
+      <workItem from="1724899125026" duration="104000" />
+      <workItem from="1724899640928" duration="3935000" />
+>>>>>>> c9ada5b8bdb2afb965189348daf8e0d892db88d9
     </task>
+    <task id="LOCAL-00001" summary="[feat]  - init">
+      <option name="closed" value="true" />
+      <created>1724899821224</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724899821224</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[feat]  - header">
+      <option name="closed" value="true" />
+      <created>1724903106916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724903106916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[feat]  - init" />
+    <MESSAGE value="[feat]  - header" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]  - header" />
+  </component>
+>>>>>>> c9ada5b8bdb2afb965189348daf8e0d892db88d9
 </project>
