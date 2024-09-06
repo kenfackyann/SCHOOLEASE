@@ -1,118 +1,118 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
+.body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
 main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .school-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
 .school-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .school-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .school-logo {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .school-logo-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .school-info h4 {
-    font-size: 22px;
-    color: #007acc;
-    margin-bottom: 5px;
+  font-size: 22px;
+  color: #007acc;
+  margin-bottom: 5px;
 }
 
 .school-info p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .school-details {
-    display: flex;
-    gap: 15px;
-    font-size: 14px;
-    color: #666;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #666;
 }
 
 .school-details span {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .material-icons-sharp {
-    font-size: 18px;
-    margin-right: 5px;
-    color: #007acc;
+  font-size: 18px;
+  margin-right: 5px;
+  color: #007acc;
 }
 
 /* School meta (contact details) */
 .school-meta {
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #333;
 }
 
 .school-meta p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /* Bookmark icon */
 .school-card .material-icons-sharp:last-child {
-    font-size: 24px;
-    color: #007acc;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  font-size: 24px;
+  color: #007acc;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .school-card .material-icons-sharp:last-child:hover {
-    color: #005f99;
+  color: #005f99;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .school-card {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .school-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .school-meta {
-        margin-top: 10px;
-    }
+  .school-meta {
+    margin-top: 10px;
+  }
 
-    .school-logo {
-        margin-bottom: 15px;
-    }
+  .school-logo {
+    margin-bottom: 15px;
+  }
 
-    .school-details {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .school-details {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
