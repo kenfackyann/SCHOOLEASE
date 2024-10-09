@@ -82,3 +82,88 @@ exports.deleteUniversity = async(req, res) => {
         });
     }
 }
+// exports.university_filter = async(req, res) => {
+    
+//     const { region, field, price, language } = req.body;
+
+//     // Start building the SQL query
+//     let sql = `SELECT DISTINCT universities.* FROM universities 
+//     JOIN university_field ON universities.universityId = university_field.universityId 
+//     JOIN fields ON university_field.field_id =fields.id 
+//     JOIN universities_languages ON universities.universityId = universities.universityId 
+//     JOIN language ON universities_languages.langauge_id =language.id 
+//     WHERE language.languages = ?
+//           AND universities.fee <= ?
+//           AND fields.field_name = ?
+//           AND universities.region = ?`
+//           ;
+    
+//     // Array to hold the query parameters (values to be bound)
+//     const params = [language, price, field, region]
+
+//     // // Add conditions to the SQL query based on user responses
+//     // if (region) {
+//     //     sql += ` AND universities.region = ?`;   // Add condition for region
+//     //     params.push(region);
+//     // }
+//     // if (field) {
+//     //     sql += ` AND fields.field_name = ?`;    // Add condition for field
+//     //     params.push(field);
+//     // }
+//     // if (price) {
+//     //     sql += ` AND universities.fee <= ?`;     // Add condition for price (fee)
+//     //     params.push(price);
+//     // }
+//     // if (language) {
+//     //     sql += ` AND language.languages = ?`; // Add condition for language
+//     //     params.push(language);
+//     // }
+
+//     // Execute the raw SQL query with the dynamically built query and parameters
+//     dbconnection.query(sql, params, (err, results) => {
+//         if (err) {
+//             console.error('Database query error:', err);
+//             return res.status(500).json({ error: 'Database query failed' });
+//         }
+
+//         // Send the filtered results (universities) back to the client
+//         res.json(results);
+//     });
+
+// 
+exports.filterUniversity= async(req, res) => {
+    try {
+        const { region, field, price, language } = req.body;
+
+        // SQL query with proper JOIN condition
+        const sql = `
+           SELECT DISTINCT universities.* ,fields.* FROM universities 
+           JOIN university_field ON universities.universityId = university_field.universityId 
+           JOIN fields ON university_field.field_id =fields.id 
+           JOIN universities_languages ON universities.universityId = universities.universityId 
+           JOIN language ON universities_languages.langauge_id =language.id
+            WHERE language.languages = ?
+              AND universities.fee <= ?
+              AND fields.field_name = ?
+              AND universities.region = ?
+        `;
+
+        const params = [language, price, field, region];
+
+        // Make sure the query is executed using a promise-based approach
+        const [UniversityResult] = await dbconnection.query(sql, params);
+
+        res.status(200).send({
+            success: true,
+            data: UniversityResult,
+            message: 'Success',
+        });
+    } catch (error) {
+        console.error('Database error:', error); // Log the error for debugging
+        res.status(500).send({
+            success: false,
+            data: [],
+            message: error.stack,
+        });
+    }
+}
