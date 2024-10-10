@@ -9,5 +9,6 @@ route.post('/addUniv', univ_controller.saveUniversity);
 route.put('/updateUniv', univ_controller.updateUniversity);
 
 route.delete('/deleteUniv:id', univ_controller.deleteUniversity);
+route.post('/filterUniv', univ_controller.filterUniversity);
 
 module.exports = route

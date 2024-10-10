@@ -1,8 +1,8 @@
-body {
+.body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(./8270289.jpg);
+    background-image: url(../../../../public/8270289.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
