@@ -1,6 +1,10 @@
 // chatbot.js
 
 // Define the series of questions
+const inputBox = document.getElementById('userInput');
+inputBox.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') sendMessage();
+});
 const questions = [
     "in Which  region do you want your school to be ?",
     "in what field are you looking for ?",
@@ -156,6 +160,7 @@ function extractKeyword(userInput) {
 }
 // Function to get a message with valid inputs
 function getValidInputsMessage() {
+    inputBox.value = '';
     let message = "I didn't understand that. Please enter one of the following options:\n";
     if (currentQuestionIndex === 1) {
         message += `regions:\n ${keywordMapping.region.join(", \n")}.`;

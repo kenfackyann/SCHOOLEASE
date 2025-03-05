@@ -1,36 +1,79 @@
-
-        body {
+body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, #4d79ff, #80bfff);
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #87CEEB, #F0F0F0); /* Sky blue and light grey */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
 
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .login-box {
-    background: #fff;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.login-box h2 {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
     margin-bottom: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
+    animation: bounce 2s infinite;
+}
+
+
+
+.title {
+    font-size: 2em;
+    font-weight: 700;
     color: #333;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.login-box h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-in-out;
 }
 
 .input-group {
@@ -39,14 +82,20 @@
 }
 
 .input-group input {
-    width: 80%;
-    padding: 12px 15px;
-    padding-left: 40px;
+    width: calc(100% - 60px); /* Adjusted width to fit container */
+    padding: 12px 15px 12px 40px;
     border-radius: 25px;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     font-size: 0.9em;
     color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #87CEEB;
+    box-shadow: 0 0 8px rgba(135, 206, 235, 0.2);
 }
 
 .input-group i {
@@ -54,16 +103,14 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(124, 157, 247);
+    color: #87CEEB;
 }
 
-.input-group i:hover {
-    color: rgb(69, 118, 252);
-} 
 #togglePassword {
     right: 15px;
     left: auto;
     cursor: pointer;
+    color: #87CEEB;
 }
 
 button[type="submit"] {
@@ -71,38 +118,79 @@ button[type="submit"] {
     padding: 12px;
     border: none;
     border-radius: 25px;
-    background:rgb(124, 157, 247);
+    background: #87CEEB;
     color: #fff;
     font-size: 1em;
     cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background: rgb(69, 118, 252);
+    background: #6aa8c7;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(135, 206, 235, 0.3);
 }
 
 .signup-link {
-    margin-top: 15px;
-    color: #666;
+    margin-top: 20px;
     font-size: 0.9em;
-    cursor: pointer;
-   
+    color: #666;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .signup-link a {
-    color: rgb(69, 118, 252);
+    color: #87CEEB;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .signup-link a:hover {
-    color: #333;
+    color: #6aa8c7;
     text-decoration: underline;
 }
 
-.signup-link:hover {
-    color: #333;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .login-box h3 {
+        font-size: 1.3em;
+    }
+
+    .input-group input {
+        font-size: 0.8em;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9em;
+    }
 }
 
-    
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .login-box h3 {
+        font-size: 1.2em;
+    }
+
+    .input-group input {
+        font-size: 0.75em;
+    }
+
+    button[type="submit"] {
+        font-size: 0.8em;
+    }
+}

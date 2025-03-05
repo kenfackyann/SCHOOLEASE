@@ -2,7 +2,7 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const { body, validationResult } = require('express-validator');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());

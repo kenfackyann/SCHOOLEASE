@@ -11,13 +11,13 @@ body {
 }
 .chat-container {
     width: 100%;
-    max-width: 400px;
-    height: 100vh;
+    max-width: 450px;
+    height: 97vh;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
 }
 .chat-box {
     flex: 1;
@@ -32,14 +32,24 @@ body {
     padding: 10px;
     border-top: 1px solid #ccc;
     background-color: #f4f4f4;
+    border-radius: 15px;
 }
 .user-input input[type="text"] {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-right: 10px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    outline: none;
 }
+#userInput:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+   
+
+}
+
 .user-input button {
     padding: 10px 20px;
     border: none;

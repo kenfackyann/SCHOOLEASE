@@ -4,12 +4,12 @@ const bcrypt = require('bcrypt');
 // Signup Function
 exports.signup = async (req, res) => {
     try {
-        const { firstName, lastName, emailAddress, password, accountType } = req.body;
+        const { Name, emailAddress, password, accountType } = req.body;
         const hashPassword = await bcrypt.hash(password, 10);
 
         await dbconnection.query(
-            'INSERT INTO user (firstName, lastName, emailAddress, password, accountType,ownership) VALUES (?, ?, ?, ?, ?)',
-            [firstName, lastName, emailAddress, hashPassword, accountType]
+            'INSERT INTO user (Name, emailAddress, password, accountType) VALUES (?, ?, ?, ?)',
+            [Name, emailAddress, hashPassword, accountType]
         );
 
         const userInserted = await dbconnection.query(
