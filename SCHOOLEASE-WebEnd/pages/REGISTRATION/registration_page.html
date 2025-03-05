@@ -1,208 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/REG.CSS">
-
-
-    
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* General Styles */
         body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, #4d79ff, #80bfff);
-    font-family: Arial, sans-serif;
-}
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #87CEEB, #F0F0F0); /* Sky blue and light grey */
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
 
-#person{
- 
-}
-#school{
-    right: 100;
-}
-.form-section{
-       display: flex;
-       justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-}
-.registration-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin: 40px;
-}
+        .registration-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
 
-.registration-box {
-    background: #fff;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+        .registration-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
 
-.registration-box h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-}
-.form-section{
-    display: flex;
-    
-}
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.input-group {
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+        .logo img {
+            height: 80px;
+            width: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
 
-.input-group input {
-    width: 80%;
-    padding: 12px 15px;
-    padding-left: 40px;
-    border-radius: 25px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    font-size: 0.9em;
-    color: #333;
-}
+  
 
-.input-group i {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(124, 157, 247);
-}
-.input-group input i:hover {
-    color: rgb(69, 118, 252);
-}
+        .title {
+            font-size: 2em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
 
-#togglePassword, #toggleConfirmPassword {
-    right: 15px;
-    left: auto;
-    cursor: pointer;
-}
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 25px;
-    background: rgb(124, 157, 247);
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
+        .registration-box h3 {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+            animation: slideIn 1s ease-in-out;
+        }
 
-button[type="submit"]:hover {
-    background: rgb(69, 118, 252);
-}
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
 
-.login-link {
-    text-decoration: none;
-    margin: 1rem;
-    color: #666;
-    font-size: 0.9em;
-    cursor: pointer;
-   
-}
+        .input-group input {
+            width: calc(100% - 60px); /* Adjusted width to fit container */
+            padding: 12px 15px 12px 40px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            font-size: 0.9em;
+            color: #333;
+            outline: none;
+            transition: all 0.3s ease;
+        }
 
-.login-link:hover {
-    color: #333;
-}
+        .input-group input:focus {
+            border-color: #87CEEB;
+            box-shadow: 0 0 8px rgba(135, 206, 235, 0.2);
+        }
 
-.login-link a {
-    color: rgb(69, 118, 252);
-    text-decoration: none;
-}
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #87CEEB;
+        }
 
-.login-link a:hover {
-    color: #333;
-    text-decoration: underline;
-}
+        #togglePassword, #toggleConfirmPassword {
+            right: 15px;
+            left: auto;
+            cursor: pointer;
+            color: #87CEEB;
+        }
 
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background: #87CEEB;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background: #6aa8c7;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(135, 206, 235, 0.3);
+        }
+
+        .login-link {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .login-link a {
+            color: #87CEEB;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .login-link a:hover {
+            color: #6aa8c7;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .registration-box {
+                padding: 30px;
+            }
+
+            .title {
+                font-size: 1.8em;
+            }
+
+            .registration-box h3 {
+                font-size: 1.3em;
+            }
+
+            .input-group input {
+                font-size: 0.8em;
+            }
+
+            button[type="submit"] {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .registration-box {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 1.5em;
+            }
+
+            .registration-box h3 {
+                font-size: 1.2em;
+            }
+
+            .input-group input {
+                font-size: 0.75em;
+            }
+
+            button[type="submit"] {
+                font-size: 0.8em;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="box">
     <div class="registration-container">
         <div class="registration-box">
-            <h2>REGISTRATION</h2>
-            <div  class="form-section">
-                <span id="Person">Person</span>
-                <input type="checkbox" id="valuebox">
-                <span id="school">School</span>
-                <input type="checkbox" id="valuebox">
+            <div class="logo">
+                <img src="../../img/home_image/logo.png" alt="Logo">
             </div>
-            <form action="#">
+            <div class="title">SCHOOLEASE</div>
+            <h3>REGISTRATION</h3>
+            <form action="#" id="registration_form">
                 <div class="input-group">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="name" required>
+                    <input id="name" type="text" placeholder="Name" required>
                 </div>
                 <div class="input-group">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="email address" required>
+                    <input id="email" type="email" placeholder="Email Address" required>
                 </div>
                 <div class="input-group">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="password" id="password" required>
+                    <input type="password" placeholder="Password" id="password" required>
                     <i class="fas fa-eye" id="togglePassword"></i>
                 </div>
                 <div class="input-group">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="confirm password" id="confirmPassword" required>
+                    <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
                     <i class="fas fa-eye" id="toggleConfirmPassword"></i>
                 </div>
                 <button type="submit">REGISTER</button>
             </form>
-           <p  class="login-link">Already have an account? <a href="login.html">Login</a> </p>
+
+<p id="message"></p>
+            <p class="login-link">Already have an account? <a href="../AUTENTICATION/login.html">Login</a></p>
         </div>
     </div>
-    </div>
 
-    <script>
-        // JavaScript to toggle password visibility
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
+    <script src="../../js/REGISTRATION/registration.js">
 
-        const toggleConfirmPassword = document.querySelector("#toggleConfirmPassword");
-        const confirmPassword = document.querySelector("#confirmPassword");
-
-        togglePassword.addEventListener("click", function () {
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-          
-         // Toggle the icon class
-this.classList.toggle('fa-eye');
-this.classList.toggle('fa-eye-slash');
-        });
-
-        toggleConfirmPassword.addEventListener("click", function () {
-            const type = confirmPassword.getAttribute("type") === "password" ? "text" : "password";
-            confirmPassword.setAttribute("type", type);
-          
-         // Toggle the icon class
-this.classList.toggle('fa-eye');
-this.classList.toggle('fa-eye-slash');
-        });
     </script>
 </body>
 </html>
