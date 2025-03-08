@@ -23,9 +23,29 @@
             <a href="#contact">Contact</a>
             
         </nav>
-        <div class="auth-buttons">
-            <a href="./pages/AUTENTICATION/login.html" class="btn login-btn">Login</a>
-            <a href="./pages/REGISTRATION/registration_page.html" class="btn register-btn">Register</a>
+        <div class="profile">
+            <!-- Profile Icon -->
+            <div class="profile-icon" onclick="toggleAuthButtons()">
+                <img src="./img/home_image/profile.png" alt="Profile Icon">
+            </div>
+            <div class="loader_box">
+                <span class="loader"></span>
+            </div>
+           
+            <!-- Auth Buttons (Hidden by Default) -->
+            <div class="auth-buttons" id="authButtons">
+                <a href="./pages/AUTENTICATION/login.html" class="btn login-btn">Login</a>
+                <a href="./pages/REGISTRATION/registration_page.html" class="btn register-btn">Register</a>
+            </div>
+            <div class="user" >
+                <div class="userInfo"> 
+                    <div class="userName"></div>
+                <div class="userEmail"></div>
+            </div>
+               <div class="logout">
+                    <button onclick="logOut()">logout</button>
+                </div>
+            </div>
         </div>
     </header>
 

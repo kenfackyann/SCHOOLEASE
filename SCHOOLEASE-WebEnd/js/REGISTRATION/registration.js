@@ -25,30 +25,47 @@
   
 document.getElementById('registration_form').addEventListener('submit',async function(e){
 e.preventDefault();
+console.log("just to test");
+
 const name = document.getElementById('name').value;
 const email = document.getElementById('email').value;
 const password = document.getElementById('password').value;
+const confirmPassword = document.getElementById('confirmPassword').value;
 const accountType = "searcher";
 
-console.log(name,email,password);
+if( password === confirmPassword){
+  const response = await fetch('http://localhost:3001/auth/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ 
+      Name: name,
+      emailAddress: email,
+      password: password,
+      accountType: accountType
+    })
+  });
+  
+  const data = await response.json();
 
-const response = await fetch('http://localhost:3001/auth/register', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ 
-    Name: name,
-    emailAddress: email,
-    password: password,
-    accountType: accountType
-  })
-});
-
-const data = await response.json();
-document.getElementById('message').innerText = data.message;
 
 if (response.status === 201) {
-  alert('Registration successful!');
-  window.location.href = '../../index.html.html';
+    document.getElementById('message').innerText = data.message;
+  document.getElementById('message').style.color = "green";
+  window.location.href = '../../pages/AUTENTICATION/login.html';
 }
+else{
+  document.getElementById('message').innerText = data.message;
+  document.getElementById('message').style.color = "red";
+  document.getElementById('message').style.textShadow = " 0 0 8px rgba(204, 231, 255, 0.8)";
+}
+}
+else{
+  document.getElementById('message').innerText = "pasword does not match";
+  document.getElementById('message').style.color = "red";
+  document.getElementById('message').style.textShadow = " 20px 30px 20px black";
+}
+
+
+
 
 })

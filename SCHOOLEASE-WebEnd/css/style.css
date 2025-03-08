@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
+    
     background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
@@ -11,10 +11,10 @@ body {
 .header {
     background: rgba(0, 122, 204, 0.8); /* Semi-transparent */
     backdrop-filter: blur(10px);
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -53,6 +53,7 @@ body {
 /* Navigation Styling */
 .header .nav {
     display: flex;
+    transition: all 0.3s ease-in-out;
 }
 
 .header .nav a {
@@ -89,9 +90,42 @@ body {
     color: #cce7ff;
     text-shadow: 0 0 8px rgba(204, 231, 255, 0.8);
 }
+.profile{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+transition: all 0.5s ease-in-out;
+}
+.profile-icon  {
+    
+    /* background-color: #cce7ff; */
+  
+}
+.profile-icon img {
+    height: 50px;
+    width: 50px;
+    background-color: #cce7ff;
+    border-radius: 25px;
+    cursor: pointer;
+}
 .auth-buttons {
-    display: flex;
-    gap: 15px;
+    display: block;
+    transform: scale(0);
+    
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  
+    z-index: 10;
+    transition:  0.3s ease-in-out;
+   
+   
+
 }
 
 .auth-buttons .btn {
@@ -111,17 +145,131 @@ body {
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.logout button{
+    margin-left: 10px;
+    background: white;
+    color: skyblue;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, skyblue, #4aa3df);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logout button:hover{
+    background: transparent;
+    color: #4aa3df;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 .auth-buttons .btn:hover {
     background: transparent;
-    color: white;
+    color: #4aa3df;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.user{
+    display: flex;
+    transform: scale(0);
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    gap: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+  color: #005f99;
+    z-index: 10;
+    transition:  0.3s ease-in-out;
+   
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userName{
+    font-weight: bold;
+    font-size: 30px;
+}
+.userEmail{
+    font-style: italic;
+    font-weight: lighter;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #4aa3df;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #007acc;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  .loader_box{
+    display: flex;
+    transform: scale(0);
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    gap: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+  color: #005f99;
+    z-index: 10;
+    transition:  0.3s ease-in-out;
+  }
+.show {
+    
+  
+       transform: scale(1);
+        top: 70px;
+        right: 20px;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: row;
         padding: 15px;
         text-align: center;
     }
@@ -142,6 +290,13 @@ body {
     }
     .auth-buttons {
         margin-top: 10px;
+        
+    }
+    .show {
+        display: block;
+       transform: scale(1);
+        top: 70px;
+        right: 20px;
     }
 }
 
